@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+
+<!-- sidebar -->
+        <div class="d-none d-md-block col-md-3" id="sidebar-col">
+          <div class="row">
+            <div class="col py-2">
+              <input type="search" class="form-control mt-2 p-4" id="search-box" placeholder="Search contacts...">
+            </div>
+          </div>
+
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/monster-6.png" alt="monster-1">
+            <p>Mike</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/monster-60.png" alt="monster-1">
+            <p>Sophie</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/monster-2.png" alt="monster-1">
+            <p>Jen</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/monster-11.png" alt="monster-1">
+            <p>Leo</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/monster-46.png" alt="monster-1">
+            <p>Jorge</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/android.png" alt="monster-1">
+            <p>Amir</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/monster-42.png" alt="monster-1">
+            <p>Liz</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/monster-1.png" alt="monster-1">
+            <p>Jeff</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/bee.png" alt="monster-1">
+            <p>Lisa</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/monster-41.png" alt="monster-1">
+            <p>Seb</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/monster-16.png" alt="monster-1">
+            <p>Lucia</p>
+          </div>
+          <div class="contact p-3">
+            <img class="contact-icon" src="./icons/monster-29.png" alt="monster-1">
+            <p>Mo</p>
+          </div>
+
+        </div>
+
+<!-- main col -->
+        <div class="col-md-9" id="messages-col">
+<!-- message heading -->
+          <div class="row">
+            <div class="col p-3" id="header">
+              <h3>Chatbot</h3>
+            </div>
+          </div>
+
+<!-- main chat area -->
+          <div class="row">
+            <div class="col chat-display-area d-flex flex-column justify-content-end">
+
+              <div class="msg-box box-left">
+                <p class="msg-text">Hi how are you?</p>
+              </div>
+              <div class="msg-box box-right">
+                <p class="msg-text">Hi how are you?</p>
+              </div>
+              <div class="msg-box box-left">
+                <p class="msg-text">Hi how are you?</p>
+              </div>
+              <div class="msg-box box-left">
+                <p class="msg-text">Hi how are you?</p>
+              </div>
+
+            </div>
+          </div>
+
+<!-- text area and send -->
+          <div class="row">
+            <div class="col-9 p-4">
+              <textarea class="form-control m-2" id="text-area" rows="3"></textarea>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center">
+              <button type="button" class="btn btn-info py-2">Send</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end of main row -->
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </body>
+</html>
+
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
