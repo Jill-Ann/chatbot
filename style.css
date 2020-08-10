@@ -44,7 +44,7 @@ body {
 }
 
 .contact-icon {
-  height: 40px;
+  height: 45px;
   width: auto;
   display: inline;
 }
@@ -101,7 +101,7 @@ body {
 
 .bubble-right p {
   /* border: 1px solid orange; */
-  background-color: yellow;
+  background-color: paleturquoise;
 }
 
 .bubble-left p {
@@ -111,7 +111,7 @@ body {
 
 /* ----- bottom section ----- */
 
-#text-area {
+textarea {
   background-color: #eff0f3;
 }
 
