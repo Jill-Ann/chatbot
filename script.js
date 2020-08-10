@@ -5,14 +5,17 @@ const responses = ["Hello", "Bleh", "Goodbye", "I'm hungry", "I'm busy", "Who ar
 // time
 
 const timeNow = () => {
-  let date = new Date($.now());
-  let time = date.getHours() + ":" + date.getMinutes();
+  let currentDate = new Date($.now());
+  let hours = currentDate.getHours();
+  let mins = ('0' + currentDate.getMinutes()).slice(-2);
+  let time = hours + ":" + mins;
   return time;
 }
 
 const displayTime = (time) => {
   let timeStamp = $("<p>");
-  timeStamp.addClass("time-stamp").text(time);
+  timeStamp.addClass("time-stamp")
+           .text(time);
   return timeStamp;
 }
 
@@ -46,13 +49,16 @@ const selectChatbotAnswer = (responses) => {
 const displayChatbotAnswer = (answer) => {
   let bubble = $("<div>");
   let bubbleText = $("<p>");
-  bubble.addClass("bubble bubble-left")
-        .appendTo("#chat-area");
-  bubbleText.text(answer)
-            .appendTo(bubble);
   let timeStamp = displayTime(timeNow());
-  timeStamp.addClass("time-stamp")
-           .insertAfter(bubble);
+  bubble.addClass("bubble bubble-left")
+        .appendTo("#chat-area")
+        .hide()
+        .delay(800)
+        .fadeIn(400, () => {
+          timeStamp.addClass("time-stamp").insertAfter(bubble);
+          $("#chat-area").animate({ scrollTop: 300 }, 500);
+        });
+  bubbleText.text(answer).appendTo(bubble);
 }
 
 // clear
@@ -73,6 +79,6 @@ $("#form").on("submit", (event) => {
   event.preventDefault();
   createBubble(getMessageText());
   displayChatbotAnswer(selectChatbotAnswer(responses));
-  $('#chat-area').scrollTop($('#chat-area')[0].scrollHeight);
   clearTextArea();
+  $('#chat-area').scrollTop($('#chat-area')[0].scrollHeight);
 })

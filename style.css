@@ -87,6 +87,7 @@ body {
 }
 .bubble {
   margin: 25px 5px 16px 5px;
+  position: relative;
 }
 
 .bubble p {
@@ -100,18 +101,17 @@ body {
 }
 
 .bubble-right p {
-  /* border: 1px solid orange; */
-  background-color: paleturquoise;
+  background-color: lightcyan;
 }
 
 .bubble-left p {
-  /* border: 1px solid pink; */
   background-color: mistyrose;
 }
 
 .time-stamp {
   padding: 0;
   font-size: 12px;
+  /* border: 1px solid black; */
 }
 
 .time-stamp-right {
