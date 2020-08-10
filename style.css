@@ -9,6 +9,22 @@ body {
   color: #272343;
 }
 
+.profile-circle {
+  border-radius: 50%;
+  /* border: 1px solid grey; */
+  background-color: white;
+  overflow: hidden;
+}
+
+#main-circle {
+  border: 1px solid #272343;
+}
+
+.profile-icon {
+  height: 70px;
+  width: auto;
+}
+
 /* ----- contacts column ----- */
 
 #sidebar-col {
@@ -24,6 +40,7 @@ body {
 
 .contact:hover {
   background-color: #fffffe;
+  cursor: pointer;
 }
 
 .contact-icon {
