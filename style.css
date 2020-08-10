@@ -6,9 +6,6 @@ body {
 
 #header {
   background-color: #ff8e3c;
-}
-
-h3 {
   color: #272343;
 }
 
@@ -67,27 +64,32 @@ h3 {
   /* background-color: pink; */
 }
 
-#chat-container {
-  /* display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-start !important; */
-  height: 67vh;
+#chat-area {
+  height: 62vh;
+  overflow: scroll;
 }
-
 .bubble {
-
+  margin: 25px 5px;
 }
 
-.msg-text {
-  border: 1px solid black;
+.bubble p {
   border-radius: 10px;
-  padding: 10px;
   display: inline;
-  margin: 12px;
+  padding: 15px;
 }
 
-.box-right p {
-  float: right;
+.bubble-right {
+  text-align: right;
+}
+
+.bubble-right p {
+  /* border: 1px solid orange; */
+  background-color: yellow;
+}
+
+.bubble-left p {
+  /* border: 1px solid pink; */
+  background-color: mistyrose;
 }
 
 /* ----- bottom section ----- */
