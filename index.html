@@ -83,39 +83,34 @@
 
 <!-- main chat area -->
           <div class="row">
-            <div class="col chat-display-area d-flex flex-column justify-content-end">
-
-              <div class="msg-box box-left">
-                <p class="msg-text">Hi how are you?</p>
-              </div>
-              <div class="msg-box box-right">
-                <p class="msg-text">Hi how are you?</p>
-              </div>
-              <div class="msg-box box-left">
-                <p class="msg-text">Hi how are you?</p>
-              </div>
-              <div class="msg-box box-left">
-                <p class="msg-text">Hi how are you?</p>
-              </div>
+            <div id="chat-container" class="col d-flex flex-column justify-content-end">
 
             </div>
           </div>
 
 <!-- text area and send -->
           <div class="row">
-            <div class="col-9 p-4">
-              <textarea class="form-control m-2" id="text-area" rows="3"></textarea>
+            <div class="col">
+              <form id="form">
+                <textarea class="form-control m-2" id="text-area" rows="3"></textarea>
+                <button type="submit" class="btn btn-info py-2">Send</button>
+              </form>
             </div>
-            <div class="col-3 d-flex flex-column justify-content-center">
-              <button type="button" class="btn btn-info py-2">Send</button>
-            </div>
+
           </div>
         </div>
       </div> <!-- end of main row -->
 
+      <!-- <div class="col-9 p-4">
+        <textarea class="form-control m-2" id="text-area" rows="3"></textarea>
+      </div>
+      <div class="col-3 d-flex flex-column justify-content-center">
+        <button type="button" class="btn btn-info py-2">Send</button>
+      </div> -->
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
 

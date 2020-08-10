@@ -67,15 +67,15 @@ h3 {
   /* background-color: pink; */
 }
 
-.chat-display-area {
+#chat-container {
   /* display: flex !important;
   flex-direction: column !important;
   justify-content: flex-start !important; */
   height: 67vh;
 }
 
-.msg-box {
-  margin: 12px;
+.bubble {
+
 }
 
 .msg-text {
@@ -83,6 +83,7 @@ h3 {
   border-radius: 10px;
   padding: 10px;
   display: inline;
+  margin: 12px;
 }
 
 .box-right p {
