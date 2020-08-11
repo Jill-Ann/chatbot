@@ -19,6 +19,21 @@ const displayTime = (time) => {
   return timeStamp;
 }
 
+// typing indicator
+
+const createTypingIndicator = () => {
+  let tiContainer = $("<div>").addClass("ti-container");
+  let tiBlock = $("<div>").addClass("ti-block").appendTo(tiContainer);
+  $("<div>").addClass("ti-dot").appendTo(tiBlock);
+  $("<div>").addClass("ti-dot").appendTo(tiBlock);
+  $("<div>").addClass("ti-dot").appendTo(tiBlock);
+  return tiContainer;
+}
+
+
+
+
+
 // user input
 
 const getMessageText = () => {
@@ -50,15 +65,19 @@ const displayChatbotAnswer = (answer) => {
   let bubble = $("<div>");
   let bubbleText = $("<p>");
   let timeStamp = displayTime(timeNow());
+  let typeIndicator = createTypingIndicator();
+  typeIndicator.appendTo("#chat-area");
   bubble.addClass("bubble bubble-left")
         .appendTo("#chat-area")
         .hide()
-        .delay(800)
-        .fadeIn(400, () => {
+        .delay(2500)
+        .show(10, () => {
+          typeIndicator.hide();
           timeStamp.addClass("time-stamp").insertAfter(bubble);
-          $("#chat-area").animate({ scrollTop: 300 }, 500);
+          $("#chat-area").animate({ scrollTop: 5000 }, 500);
         });
-  bubbleText.text(answer).appendTo(bubble);
+  bubbleText.text(answer)
+            .appendTo(bubble);
 }
 
 // clear
