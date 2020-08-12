@@ -70,7 +70,7 @@ const displayChatbotAnswer = (answer) => {
   bubble.addClass("bubble bubble-left")
         .appendTo("#chat-area")
         .hide()
-        .delay(2500)
+        .delay(2700)
         .show(10, () => {
           typeIndicator.hide();
           timeStamp.addClass("time-stamp").insertAfter(bubble);
