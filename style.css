@@ -11,30 +11,25 @@ body {
 
 .profile-circle {
   border-radius: 50%;
-  /* border: 1px solid grey; */
   background-color: white;
   overflow: hidden;
 }
 
 #main-circle {
   border: 1px solid #272343;
-  /* width: 30%;
-  height: 72%; */
   width: 92px;
   height: 85px;
 }
 
 @media (min-width: 768px) {
   #main-circle {
-    /* width: 8.75%;
-    height: 87%; */
     width: 87px;
     height: 84px;
     margin-top: 8px !important;
   }
 }
 
-.profile-icon {
+#main-avatar-pic {
   height: 75px;
   width: auto;
 }
@@ -42,14 +37,15 @@ body {
 /* ----- contacts column ----- */
 
 #sidebar-col {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #eff0f3;
   height: 100%;
 }
 
 .contact {
-  /* border-bottom: 1px solid #2a2a2a; */
   border-bottom: 1px solid silver;
+  border-radius: 2px;
   transition: all 0.3s;
 }
 
@@ -77,9 +73,11 @@ body {
 }
 
 #chat-area {
-  height: 68vh;
-  overflow: scroll;
+  height: 66vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
+
 .bubble {
   margin: 25px 5px 16px 5px;
   position: relative;
@@ -115,6 +113,7 @@ body {
 
 textarea {
   background-color: #eff0f3;
+  box-shadow: 9px 9px 12px -7px rgba(0,0,0,0.75);
 }
 
 button {
