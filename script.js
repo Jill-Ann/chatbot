@@ -66,7 +66,7 @@ const displayChatbotAnswer = (answer) => {
   bubble.addClass("bubble bubble-left")
         .appendTo("#chat-area")
         .hide()
-        .delay(2700)
+        .delay(2400)
         .show(10, () => {
           typeIndicator.hide();
           timeStamp.addClass("time-stamp").insertAfter(bubble);
@@ -110,6 +110,7 @@ $("#form").on("submit", (event) => {
 
 let avatarName = $("#header-name");
 let avatarPic = $("#main-avatar-pic");
+let currentAvatar;
 
 const clearChat = () => {
   $("#chat-area").text("");
@@ -118,6 +119,7 @@ const clearChat = () => {
 $("#avatar-raffi").on("click", () => {
   avatarName.text("Chatbot Raffi");
   avatarPic.attr("src", "./icons/monster-6.png")
+  currentAvatar = "Raffi";
   clearChat();
 })
 
@@ -154,6 +156,7 @@ $("#avatar-kalaya").on("click", () => {
 $("#avatar-linda").on("click", () => {
   avatarName.text("Chatbot Linda");
   avatarPic.attr("src", "./icons/monster-42.png");
+  currentAvatar = "Linda";
   clearChat();
 })
 
@@ -172,11 +175,5 @@ $("#avatar-matt").on("click", () => {
 $("#avatar-anna").on("click", () => {
   avatarName.text("Chatbot Anna");
   avatarPic.attr("src", "./icons/monster-41.png");
-  clearChat();
-})
-
-$("#avatar-dulce").on("click", () => {
-  avatarName.text("Chatbot Dulce");
-  avatarPic.attr("src", "./icons/monster-16.png");
   clearChat();
 })
