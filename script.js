@@ -30,10 +30,6 @@ const createTypingIndicator = () => {
   return tiContainer;
 }
 
-
-
-
-
 // user input
 
 const getMessageText = () => {
@@ -104,60 +100,83 @@ $("#form").on("submit", (event) => {
 
 // change Avatar
 
+// need to tidy this up! use switch case?
+// how to get id of clicked element? Why does this not work?
+
+// $(".contact").on("click", () => {
+//     let id = $(".contact").attr("id");
+//     console.log(id);
+//   })
+
 let avatarName = $("#header-name");
 let avatarPic = $("#main-avatar-pic");
+
+const clearChat = () => {
+  $("#chat-area").text("");
+}
 
 $("#avatar-raffi").on("click", () => {
   avatarName.text("Chatbot Raffi");
   avatarPic.attr("src", "./icons/monster-6.png")
+  clearChat();
 })
 
 $("#avatar-zak").on("click", () => {
   avatarName.text("Chatbot Zak");
-  avatarPic.attr("src", "./icons/monster-60.png")
+  avatarPic.attr("src", "./icons/monster-60.png");
+  clearChat();
 })
 
 $("#avatar-sergio").on("click", () => {
   avatarName.text("Chatbot Sergio");
-  avatarPic.attr("src", "./icons/monster-2.png")
+  avatarPic.attr("src", "./icons/monster-2.png");
+  clearChat();
 })
 
 $("#avatar-usam").on("click", () => {
   avatarName.text("Chatbot Usam");
-  avatarPic.attr("src", "./icons/monster-11.png")
+  avatarPic.attr("src", "./icons/monster-11.png");
+  clearChat();
 })
 
 $("#avatar-tommy").on("click", () => {
   avatarName.text("Chatbot Tommy");
-  avatarPic.attr("src", "./icons/monster-46.png")
+  avatarPic.attr("src", "./icons/monster-46.png");
+  clearChat();
 })
 
 $("#avatar-kalaya").on("click", () => {
   avatarName.text("Chatbot Kalaya");
-  avatarPic.attr("src", "./icons/android.png")
+  avatarPic.attr("src", "./icons/android.png");
+  clearChat();
 })
 
 $("#avatar-linda").on("click", () => {
   avatarName.text("Chatbot Linda");
-  avatarPic.attr("src", "./icons/monster-42.png")
+  avatarPic.attr("src", "./icons/monster-42.png");
+  clearChat();
 })
 
 $("#avatar-dana").on("click", () => {
   avatarName.text("Chatbot Dana");
-  avatarPic.attr("src", "./icons/monster-1.png")
+  avatarPic.attr("src", "./icons/monster-1.png");
+  clearChat();
 })
 
 $("#avatar-matt").on("click", () => {
   avatarName.text("Chatbot Matt");
-  avatarPic.attr("src", "./icons/bee.png")
+  avatarPic.attr("src", "./icons/bee.png");
+  clearChat();
 })
 
 $("#avatar-anna").on("click", () => {
   avatarName.text("Chatbot Anna");
-  avatarPic.attr("src", "./icons/monster-41.png")
+  avatarPic.attr("src", "./icons/monster-41.png");
+  clearChat();
 })
 
 $("#avatar-dulce").on("click", () => {
   avatarName.text("Chatbot Dulce");
-  avatarPic.attr("src", "./icons/monster-16.png")
+  avatarPic.attr("src", "./icons/monster-16.png");
+  clearChat();
 })
