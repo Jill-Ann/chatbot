@@ -22,6 +22,10 @@ body {
 }
 
 @media (min-width: 768px) {
+  #header {
+    padding: 8px;
+  }
+
   #main-circle {
     width: 87px;
     height: 84px;
@@ -73,10 +77,17 @@ body {
 }
 
 #chat-area {
-  height: 66vh;
+  height: 50vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
+@media (min-width: 768px) {
+  #chat-area {
+    height: 66vh;
+  }
+}
+
 
 .bubble {
   margin: 25px 5px 16px 5px;
